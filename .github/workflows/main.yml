@@ -17,7 +17,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: step name
-        run: echo Hello, world!
+        run: |
+         echo Hello, world!
+         echo multi line
       
     
     
