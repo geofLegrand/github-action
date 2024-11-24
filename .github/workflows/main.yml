@@ -22,7 +22,7 @@ jobs:
         run: |
          echo "Hello, world!"
          echo "multi line"
-         echo " This my version ${{ github.event.inputs.VERSION_APP }}"
+         echo " This my version ${{inputs.VERSION_APP }}"
       
     
     
