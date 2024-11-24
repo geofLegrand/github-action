@@ -7,7 +7,17 @@ on:
    branches: [main]
    
  workflow_dispatch: # allow to run this worklow manually from the Action tab
+  # parametize
+   inputs:
+      VERSION_APP: 
+      description: 'version of deployment'
+      default: '1.0.3'
+      required: true
+env:
+   APP_NAME: 'fashion-app'
+  
 
+     
 jobs:
   
   build-and-release: #  This is the name of my job
@@ -20,6 +30,7 @@ jobs:
         run: |
          echo Hello, world!
          echo multi line
+         echo ${{github.event.inputs.VERSION_APP}}
       
     
     
