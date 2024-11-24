@@ -20,8 +20,8 @@ jobs:
 
       - name: step name
         run: |
-         echo Hello, world!
-         echo multi line
+         echo "Hello, world!"
+         echo "multi line"
          echo " This my version ${{ github.event.inputs.VERSION_APP }}"
       
     
